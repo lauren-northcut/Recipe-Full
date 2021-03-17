@@ -1,0 +1,26 @@
+{
+  "name": "Recipe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+  },
+  "engine": {
+    "node": "15.5.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.11.18",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
